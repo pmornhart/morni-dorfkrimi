@@ -1,0 +1,65 @@
+# Morni Dorfkrimi – Einstellungen. Nach Änderungen: /krimiadmin neuladen (oder Server neu starten).
+# Gilt für die nächste Runde; eine laufende Runde spielt mit den alten Werten zu Ende.
+
+# Zurück ins Spiel: Verliert jemand mitten in einer Runde die Verbindung (zum Beispiel, weil das Spiel abstürzt), bleibt
+# sein Platz so viele Sekunden frei – mit derselben Rolle. Kommt er rechtzeitig wieder (direkt oder über „Zurück ins
+# Spiel“ in der Lobby), spielt er weiter; sonst ist er raus (eine Dienstmütze bleibt dann liegen, wo er zuletzt stand).
+# 0 = aus (0–600).
+rueckkehr-sekunden: 60
+
+# Eigene leere Welt für die Dorflinde und die Karten (wird beim ersten Start angelegt und gebaut).
+welt: dorfkrimi
+
+dorflinde:
+  # So lange läuft der Countdown an der Dorflinde, bevor eine Runde startet (3–300).
+  # Sagen alle „bereit“, geht es nach 5 Sekunden los.
+  countdown-sekunden: 30
+  # Ab so vielen Leuten beginnt der Countdown von selbst (4–16; sonst, sobald jemand „bereit“ ist).
+  # Gespielt wird ab vier Leuten.
+  mindestens-spieler: 4
+
+runde:
+  # Höchstens so viele Leute in einer Runde (4–16).
+  hoechstens-spieler: 16
+  # So lange stehen zum Start alle auf dem Dorfplatz und erfahren ihre Rolle (5–30 Sekunden).
+  start-sekunden: 10
+  # Spielzeit in Minuten (2–20). Ist der Wilderer bis dahin nicht gefasst, gewinnt er.
+  minuten: 6
+  # Nach dem Ende: so lange werden die Rollen verraten, dann geht es zurück zur Dorflinde (5–60 Sekunden).
+  nachspiel-sekunden: 10
+  # Ab so vielen Leuten gibt es zwei Wilderer und zwei Gendarmen (4–17; 17 = immer nur einen).
+  zwei-wilderer-ab: 10
+  # true: Namen über den Köpfen sind verborgen – man erkennt sich an der Tracht (Hut, Joppe, Hose).
+  namen-verstecken: true
+
+wilderer:
+  # So lange muss der Wilderer nach dem Betäuben warten, bis das Schlafpulver wieder wirkt (5–120 Sekunden).
+  betaeuben-pause: 25
+  # So lange nach dem Start darf der Wilderer noch niemanden betäuben (0–120 Sekunden).
+  schonzeit: 20
+  # Nach dem Betäuben leuchten die Fußspuren des Wilderers so lange (0 = aus, 0–30 Sekunden).
+  spuren-sekunden: 8
+
+gendarm:
+  # Hat der Gendarm einen Wilderer gefasst, darf er nach so vielen Sekunden wieder festnehmen (3–120).
+  festnahme-pause: 15
+
+hinweise:
+  # Alle so viele Sekunden taucht irgendwo im Dorf eine neue Spur auf (5–120).
+  alle-sekunden: 20
+  # Höchstens so viele Spuren liegen gleichzeitig herum (1–10).
+  hoechstens-gleichzeitig: 4
+  # true: Wo jemand betäubt wurde, liegt eine Feder – sie verrät die Farbe vom Hut des Wilderers.
+  federn: true
+
+versammlung:
+  # true: Mit der Glocke kann man eine Dorfversammlung rufen und abstimmen, wer festgenommen wird.
+  an: true
+  # Höchstens so viele Versammlungen je Runde (0–5).
+  hoechstens: 2
+  # Frühestens so viele Sekunden nach dem Start (0–600).
+  frueheste-sekunde: 60
+  # So lange darf abgestimmt werden (10–120 Sekunden).
+  abstimm-sekunden: 30
+  # Wer einen Unschuldigen wählt, verliert so viele Punkte (Pech-Punkte, 0–20).
+  pech-punkte: 3

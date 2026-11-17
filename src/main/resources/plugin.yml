@@ -1,0 +1,57 @@
+name: MorniDorfkrimi
+version: '${project.version}'
+main: de.moinmorni.dorfkrimi.DorfkrimiPlugin
+api-version: '1.21'
+description: Dorfkrimi für das MoinMorni-Netzwerk – ein Wilderer im Dorf, wer ist es? 4 bis 16 Leute.
+authors: [MoinMorni]
+website: https://moinmorni.net
+# Läuft mit dem Netzwerk-Plugin (Sprache, Party, Statistik) und auch allein.
+softdepend: [MoinMorni]
+
+commands:
+  krimiadmin:
+    description: Verwaltung (info, status, start, vorspulen, stopp, rolle, spur, versammlung, wiederherstellen, neubauen, neuladen)
+    usage: /krimiadmin <info|status|start [karte]|vorspulen <los|ende|sekunden> [karte]|stopp [karte]|rolle <spieler> <rolle>|spur <spieler>|versammlung [karte]|hinweise <spieler>|wiederherstellen|neubauen|neuladen>
+    aliases: [dkadmin, dorfkrimi]
+    permission: moinmorni.dorfkrimi.admin
+  karte:
+    description: Über die Karte abstimmen
+    usage: /karte [oberdorf|almwirtschaft]
+    aliases: [map]
+  bereit:
+    description: An der Dorflinde bereit melden
+    usage: /bereit
+    aliases: [ready]
+  zuschauen:
+    description: Einer Runde zuschauen
+    usage: /zuschauen [spieler|karte]
+    aliases: [spectate, spec]
+  verlassen:
+    description: Runde oder Zuschauen verlassen (zurück zur Dorflinde)
+    usage: /verlassen
+    aliases: [leave]
+  notizbuch:
+    description: Notizbuch der Runde (Trachten und deine Hinweise)
+    usage: /notizbuch
+    aliases: [notes, notizen]
+  abstimmen:
+    description: Stimmzettel der Dorfversammlung öffnen
+    usage: /abstimmen
+    aliases: [vote, stimme]
+  bank:
+    description: Ausgeschieden – zurück auf die Bank vor der Wirtschaft
+    usage: /bank
+    aliases: [bench]
+  stats:
+    description: Statistik ansehen
+    usage: /stats [spieler]
+    aliases: [statistik]
+  top:
+    description: Die besten Dorfdetektive
+    usage: /top
+    aliases: [bestenliste, leaderboard]
+
+permissions:
+  moinmorni.dorfkrimi.admin:
+    description: Dorfkrimi verwalten und im Kreativmodus in der Dorfkrimi-Welt bauen
+    default: op
