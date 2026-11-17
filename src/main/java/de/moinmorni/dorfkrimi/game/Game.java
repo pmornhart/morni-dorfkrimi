@@ -808,9 +808,11 @@ public final class Game {
                 continue;
             }
             Location l = p.getLocation();
+            boolean wilderer = round.role(s.uuid()) == Role.WILDERER;
             for (Iterator<Trace> it = traces.iterator(); it.hasNext();) {
                 Trace t = it.next();
-                if (near(l, t.at())) {
+                // Eine Feder vom Tatort kann der Wilderer nicht verwischen (er steht ja meist direkt daneben).
+                if (near(l, t.at()) && !(wilderer && t.fixed() != null)) {
                     it.remove();
                     t.display().remove();
                     found(p, s, t);

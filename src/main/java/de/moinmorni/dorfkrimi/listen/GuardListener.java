@@ -205,6 +205,14 @@ public final class GuardListener implements Listener {
         }
     }
 
+    /** Keine „Rezept freigeschaltet“-Hinweise (die Tracht und Werkzeuge würden sie sonst auslösen). */
+    @EventHandler(ignoreCancelled = true)
+    public void onRecipe(org.bukkit.event.player.PlayerRecipeDiscoverEvent e) {
+        if (ours(e.getPlayer().getWorld())) {
+            e.setCancelled(true);
+        }
+    }
+
     @EventHandler(ignoreCancelled = true)
     public void onWeather(WeatherChangeEvent e) {
         if (ours(e.getWorld()) && e.toWeatherState()) {

@@ -62,7 +62,14 @@ Bank vor der Wirtschaft. Netzwerk-Kennung `dorfkrimi`, englisch „Village Myste
 - Echter Test (`test/run.sh`, Paper 26.1.2 + Test-Netzwerk, sechs Test-Spieler): **77/77**, Server-Log ohne Fehler
   (nur Mojang-429 für Köpfe im Offline-Test). Neubau ≈ 808 000 Blöcke in 76 s.
 - Gefunden im echten Test: Die Wartezeiten wurden zu Beginn der Versammlung um die ganze Abstimmzeit verschoben, auch
-  wenn alle früher gestimmt hatten – jetzt um die tatsächliche Dauer.
+  wenn alle früher gestimmt hatten – jetzt um die tatsächliche Dauer. Bei den Bildern: Der Wilderer verwischte die Feder
+  sofort, weil er direkt neben dem Betäubten stand – Federn kann er jetzt nicht verwischen (Test prüft es); im Client
+  tauchten „Rezept freigeschaltet“-Hinweise auf (jetzt abgefangen); die Leiste beim Start war zu lang. Danach echter
+  Test wieder **77/77**.
+- Bilder mit echtem Client 26.3 (über ViaVersion, nur lokal unter `~/mm-cache/bilder-dorfkrimi/`): Dorflinde, Oberdorf
+  von oben, Dorfplatz, Glockenstuhl am Rathaus, Gasthaus mit Bank, Ausblick aus dem Kirchturm, Scheune, Haus innen,
+  Wald mit Hochsitz, Alm von oben, Almwirtschaft mit Terrasse, Kapelle und Sennerei; in der Runde bei Nacht: Rolle und
+  Tracht beim Start, „Hinweis!“, Feder am Tatort, liegende Dienstmütze mit Schrift, Blick von der Bank.
 
 ## Offen
 

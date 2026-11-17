@@ -575,8 +575,8 @@ public final class Texts {
                 "<au>New personal best:</au> <gray><white><n></white> points in one round!</gray>");
 
         // ---------- Leisten ----------
-        t("bar.start", "<au>Gleich geht's los – <secs> s</au> <gray>· merk dir deine Rolle!</gray>",
-                "<au>Starting in <secs> s</au> <gray>· remember your role!</gray>");
+        t("bar.start", "<au>Gleich geht's los – <secs> s</au>",
+                "<au>Starting in <secs> s</au>");
         t("bar.time", "<gray>Zeit: <white><time></white> · noch wach: <white><n></white></gray>",
                 "<gray>Time: <white><time></white> · still awake: <white><n></white></gray>");
         t("bar.ghost", "<gray>Auf der Bank · Zeit: <white><time></white> · noch wach: <white><n></white></gray>",

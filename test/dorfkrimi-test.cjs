@@ -390,9 +390,11 @@ async function main() {
     sawTitle(anna, /Betäubt/));
   check('Alle erfahren es (de/en), noch wach: 1', await waitFor(() => sees(dora, /Anna wurde betäubt! Noch wach im Dorf: 1/) &&
     sees(bert, /Anna was knocked out/), 2000), dora.chats.slice(-1)[0]);
+  await sleep(1000); // Bert steht noch daneben – die Feder darf er nicht verwischen
   s = (await status()).oberdorf;
   const feather = s.traces.find((t) => t.kind === 'feder');
-  check('Am Tatort liegt eine Feder', Boolean(feather), JSON.stringify(s.traces));
+  check('Am Tatort liegt eine Feder (der Wilderer daneben verwischt sie nicht)', Boolean(feather) &&
+    Math.hypot(bert.entity.position.x - feather.x, bert.entity.position.z - feather.z) < 2.5, JSON.stringify(s.traces));
   check('Bert: 1 Betäubung, +5 Punkte (nach −3 Pech-Punkten: 2)', s.players.Bert.stuns === 1 && s.players.Bert.points === 2,
     JSON.stringify(s.players.Bert));
   clear(carl);

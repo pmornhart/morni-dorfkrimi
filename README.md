@@ -21,7 +21,7 @@ Englischer Name: **Village Mystery**.
    verborgen – man erkennt sich an der Tracht.
 4. **Spuren**: Im Dorf tauchen leuchtende Spuren auf. Wer aus dem Dorf hingeht, erfährt etwas Wahres über die Tracht
    des Wilderers („Der Wilderer trägt keine rote Joppe“) – nur er selbst, also erzählt es den anderen! Der Wilderer
-   verwischt Spuren, wenn er darübergeht. Wo jemand betäubt wurde, liegt eine **Feder** (Farbe vom Hut des Wilderers),
+   verwischt Spuren, wenn er darübergeht (nur Federn nicht). Wo jemand betäubt wurde, liegt eine **Feder** (Farbe vom Hut des Wilderers),
    und kurz nach dem Betäuben leuchten seine **Fußspuren**. Das **Notizbuch** zeigt alle mit ihrer Tracht und wie gut
    sie zu den eigenen Hinweisen passen.
 5. **Dienstmütze**: Liegt sie irgendwo (falsche Festnahme, Gendarm betäubt oder weg), hebt sie auf, wer aus dem Dorf
